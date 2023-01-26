@@ -16,7 +16,7 @@ PORT = environ.get("PORT", "8000")
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23560088'))
 API_HASH = environ.get('API_HASH', '999c01704d5c417749a98f4b8785fe88')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5239800184:AAEqdtDX5LzMiLI5lto42dSbST0hu4J8M4c')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5133761076:AAEQrdPJZU8R_FyedXTIzNR8zEe5HU_rgHo')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -42,8 +42,8 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amit:amit@cluster0.gqibfmc.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "GreyMatter")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amit:amit@cluster0.wvsjt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "amit")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
