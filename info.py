@@ -16,7 +16,7 @@ PORT = environ.get("PORT", "8000")
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23560088'))
 API_HASH = environ.get('API_HASH', '999c01704d5c417749a98f4b8785fe88')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5980386831:AAGSPswwtiNTcF8UClxq9AZmou4Y22epEeY')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5855938639:AAFYQlxSW8_9tSz6xjJx0w4QDiEGf47YD_8')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -42,15 +42,15 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amit:amit@cluster0.gqibfmc.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "GreyMatter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001631059705))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/GreyMatters_Bots_Discussion')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
